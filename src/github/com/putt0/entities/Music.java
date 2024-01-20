@@ -1,4 +1,4 @@
-package github.com.putt0.Entities;
+package github.com.putt0.entities;
 
 /**
  * Author - Putt0;
