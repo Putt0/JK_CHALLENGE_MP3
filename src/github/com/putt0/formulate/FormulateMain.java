@@ -4,9 +4,9 @@ package github.com.putt0.formulate;
  * Author - Putt0;
  */
 
-import github.com.putt0.entities.Music;
 import github.com.putt0.TableModel.MusicModel;
 import github.com.putt0.Utils.Timer;
+import github.com.putt0.entities.Music;
 import javazoom.jl.player.Player;
 
 import javax.sound.sampled.FloatControl;
@@ -17,7 +17,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
-import java.io.FileInputStream;
 import java.nio.file.Files;
 import java.util.Map;
 
