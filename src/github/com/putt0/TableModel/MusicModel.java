@@ -80,31 +80,31 @@ public class MusicModel extends AbstractTableModel {
     }
 
 
-    public void limpar() {
+    public void clear() {
         linhas.clear();
         fireTableDataChanged();
     }
 
-    public void addListaDeMusicas(List<Music> musicas) {
+    public void addListMusic(List<Music> music) {
         int indice = getRowCount();
-        linhas.addAll(musicas);
+        linhas.addAll(music);
 
-        fireTableRowsInserted(indice, indice + musicas.size());
+        fireTableRowsInserted(indice, indice + music.size());
     }
 
-    public Music getMusica(int rowIndex) {
+    public Music getMusic(int rowIndex) {
         return linhas.get(rowIndex);
     }
 
-    public void addMusica(Music musica) {
-        linhas.add(musica);
+    public void addMusic(Music music) {
+        linhas.add(music);
         int ultimoIndice = getRowCount() - 1;
 
         fireTableRowsInserted(ultimoIndice, ultimoIndice);
     }
 
 
-    public void removeMusica(int indiceLinha) {
+    public void removeMusic(int indiceLinha) {
         linhas.remove(indiceLinha);
         fireTableRowsDeleted(indiceLinha, indiceLinha);
     }
